@@ -8,9 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rpg-awesome/0.2.0/css/rpg-awesome.min.css"
-        integrity="sha512-01mG/8rtthZxcE/oLY/1aVBq0UHYxd3r9MgSi33zFQ190gj+BfHY8XeoFiErGyVt1pE68U6InjMq+xkVTSf6yg=="
-        crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/ddd895b5f6.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -18,7 +16,7 @@
   <body>
         <header class="container">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <a class="navbar-brand" href="#row-1"><i class="ra ra-perspective-dice-six ra-2x"></i>RPG World</a>
+                <a class="navbar-brand" href="#row-1"><i class="fas fa-dice-d20 mr-2 icons"></i>RPG World</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,7 +32,7 @@
                     </ul>
                 </div>
             </nav>
-            <div class="row pt-5 mt-5 bg-row">
+            <div class="row pt-5 mt-5 bg-row rounded-bottom">
                 <div class="col-12 col-md-4 p-3">
                     <h4 class="text-secondary">join us</h4>
                     <form class="bg-light p-2 rounded-left">
@@ -49,10 +47,10 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Confirm Subscription</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-secondary">Submit</button>
                     </form>
                 </div>
-                <div class="col-0 col-md-8 d-none d-md-block p-3 align-self-end text-right text-light">
+                <div class="col-0 col-md-8 d-none d-md-block p-3 align-self-end text-right text-light grey-fade">
                     <h2>The top source for RPG Gaming News</h2>
                     <h5>We cater to all gaming mediums!</h5>
                 </div>
@@ -60,65 +58,63 @@
         </header>  
 
         <main class="container">
-            <div class="row py-4 my-4" id="news">
-                <div class="offset-1 col-12 col-md-5 order-md-2 narrow">
-                    <div class="flow-under justify-self-center">
+            <div class="row py-4 my-4 news-row rounded-bottom" id="news">
+                <div class="offset-1 col-12 col-md-6 order-md-2 narrow">
+                    <div class="flow-under justify-self-center bg-blue rounded p-3">
                         <div>
-                            <i></i>
-                            <p>Text</p>
+                            <p><i class="fas fa-gamepad icons"></i> | Next gen consoles announced</p>
                         </div>
                         <div>
-                            <i></i>
-                            <p>Text</p>
+                            <p><i class="fas fa-battery-empty icons"></i> | New battery tech</p>
                         </div>
                         <div>
-                            <i></i>
-                            <p>Text</p>
+                            <p><i class="fas fa-desktop icons"></i> | Upcoming title announcements</p>
                         </div>
                         <div>
-                            <i></i>
-                            <p>Text</p>
+                            <p><i class="fas fa-level-up-alt icons"></i> | Level up your gaming space</p>
                         </div>
                         <div>
-                            <i></i>
-                            <p>Text</p>
+                            <p><i class="fab fa-d-and-d icons"></i> | WotC announces new book</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-5 order-md-1">
-                    <h2>Text here</h2>
-                    <p>more text here</p>
+                <div class="col-12 col-md-5 order-md-1 align-self-end text-light">
+                    <h2>The top news in gaming!</h2>
+                    <p>Headlines change as news breaks!</p>
                 </div>
             </div>
-            <div class="row py-4 my-4" id="highlight">
-                <div class="col-12 col-md-5">
-                    <img src="http://www.fillmurray.com/200/300" alt="">
+            <div class="row py-5 my-5" id="highlight">
+                <div class="col-12 col-md-8 mt-4">
+                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/GHfeNH0EYzk" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="col-12 col-md-7">
-                    <i></i>
-                    <h4>Highlight Text Here</h4>
-                    <p>support text</p>
-                    <button class="btn btn-md btn-secondary text-light">button</button>
+                <div class="col-12 col-md-4 text-right text-dark align-self-end mb-4">
+                    <h4><i class="fas fa-video icons"></i>  Top cinematic trailers of 2020</h4>
+                    <p>Never before seen footage</p>
+                    <button class="btn btn-md btn-secondary text-light">View Games</button>
                 </div>
             </div>
-            <div class="row py-4 my-4" id="reviews">
+            <div class="row py-4 my-4 reviews justify-content-around align-items-center text-center rounded-bottom" id="reviews">
                 <div class="col-12 col-md-3 order-md-2">
-                    <div class="tall-card">
-                        <i class="ra  ra-perspective-dice-six ra-2x"></i>
-                        <h5>Review Text</h5>
-                        <p>reviewer info text</p>
+                    <div class="tall-card review-card d-flex flex-column justify-content-center align-items-center rounded">
+                        <div class="text-center icons">
+                            <i class="far fa-sun"></i><i class="far fa-sun"></i><i class="far fa-sun"></i><i class="far fa-sun"></i><i class="far fa-sun"></i>
+                        </div>
+                        <h5>The greatest game ever made!</h5>
+                        <p>-Diablo-</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 order-md-1">
-                    <div class="short-card">
-                        <h5>Review Text</h5>
-                        <p>reviewer info text</p>
+                    <div class="short-card review-card d-flex flex-column justify-content-center align-items-center rounded">
+                        <h5>Graphics blew me away!</h5>
+                        <p>-The Last of Us-</p>
                     </div>
                 </div>
                 <div class="col-12 col-md-3 order-md-3">
-                    <div class="short-card">
-                        <h5>Review Text</h5>
-                        <p>reviewer info text</p>
+                    <div class="short-card review-card d-flex flex-column justify-content-center align-items-center rounded">
+                        <h5>Game play is incredibly streamlined!</h5>
+                        <p>-D&D Beyond-</p>
                     </div>
                 </div>
             </div>
@@ -127,13 +123,18 @@
         <footer class="container">
             <div class="row py-4 my-4">
                 <div class="col-12">
-                    <h4>Text</h4>
-                    <p>Subtext</p>
+                    <h4>Thanks for visiting!</h4>
+                    <p>Don't forget to sign up for our newsletter to stay up to date on all the latest gaming news</p>
                 </div>
             </div>
-            <div class="row py-4 my-4">
+            <div class="row py-4 my-4 text-center">
                 <div class="col-12">
-                    <p>Link Text/Social Icons/etc</p>
+                    <p>Check us out on social media:</p>
+                    <div class="logos">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-instagram-square"></i>
+                    </div>
                 </div>
             </div>
         </footer>
