@@ -17,44 +17,33 @@
   </head>
   <body>
         <header class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <a class="navbar-brand" href="#"><i class="ra  ra-perspective-dice-six ra-2x"></i>RPG WORLD</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Features</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pricing</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="#row-1"><i class="ra ra-perspective-dice-six ra-2x"></i>RPG World</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#news">Headlines <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-4">
-                    <form>
+            </nav>
+            <div class="row pt-5 mt-5 bg-row">
+                <div class="col-12 col-md-4 p-3">
+                    <h4 class="text-secondary">join us</h4>
+                    <form class="bg-light p-2 rounded-left">
+                        <h4>RPG World Newsletter</h4>
                         <div class="form-group">
-                            <label for="name">Name</label>
                             <input type="text" class="form-control" id="nameInput" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="fan@rpgworld.com">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
                         </div>
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -63,16 +52,17 @@
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
-                <div class="col col-md-8"></div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-5">
-                    <h2>Text here</h2>
-                    <p>more text here</p>
+                <div class="col-0 col-md-8 d-none d-md-block p-3 align-self-end text-right text-light">
+                    <h2>The top source for RPG Gaming News</h2>
+                    <h5>We cater to all gaming mediums!</h5>
                 </div>
-                <div class="col col-md-1"></div>
-                <div class="col-12 col-md-5">
-                    <div>
+            </div>
+        </header>  
+
+        <main class="container">
+            <div class="row py-4 my-4" id="news">
+                <div class="offset-1 col-12 col-md-5 order-md-2 narrow">
+                    <div class="flow-under justify-self-center">
                         <div>
                             <i></i>
                             <p>Text</p>
@@ -95,44 +85,53 @@
                         </div>
                     </div>
                 </div>
-                <div class="col col-md-1"></div>
+                <div class="col-12 col-md-5 order-md-1">
+                    <h2>Text here</h2>
+                    <p>more text here</p>
+                </div>
             </div>
-        </header>  
-
-        <main class="container">
-            <div class="row">
+            <div class="row py-4 my-4" id="highlight">
                 <div class="col-12 col-md-5">
                     <img src="http://www.fillmurray.com/200/300" alt="">
                 </div>
                 <div class="col-12 col-md-7">
-                    <h4>Callout Text Here</h4>
+                    <i></i>
+                    <h4>Highlight Text Here</h4>
+                    <p>support text</p>
+                    <button class="btn btn-md btn-secondary text-light">button</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-md-3">
-                    <i></i>
-                    <h5>Review Text</h5>
-                    <p>reviewer info text</p>
+            <div class="row py-4 my-4" id="reviews">
+                <div class="col-12 col-md-3 order-md-2">
+                    <div class="tall-card">
+                        <i class="ra  ra-perspective-dice-six ra-2x"></i>
+                        <h5>Review Text</h5>
+                        <p>reviewer info text</p>
+                    </div>
                 </div>
-                <div class="col-12 col-md-3">
-                    <h5>Review Text</h5>
-                    <p>reviewer info text</p>
+                <div class="col-12 col-md-3 order-md-1">
+                    <div class="short-card">
+                        <h5>Review Text</h5>
+                        <p>reviewer info text</p>
+                    </div>
                 </div>
-                <div class="col-12 col-md-3">
-                    <h5>Review Text</h5>
-                    <p>reviewer info text</p>
+                <div class="col-12 col-md-3 order-md-3">
+                    <div class="short-card">
+                        <h5>Review Text</h5>
+                        <p>reviewer info text</p>
+                    </div>
                 </div>
             </div>
         </main>
 
         <footer class="container">
-            <div class="row">
+            <div class="row py-4 my-4">
                 <div class="col-12">
                     <h4>Text</h4>
                     <p>Subtext</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row py-4 my-4">
                 <div class="col-12">
                     <p>Link Text/Social Icons/etc</p>
                 </div>

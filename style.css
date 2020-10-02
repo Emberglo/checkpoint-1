@@ -1,7 +1,53 @@
 body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+header {
+}
+main {
+	flex-grow: 1;
+}
+footer {
+}
+
+body {
 	font-family: 'Piazzolla', serif;
 }
 
 div {
 	outline: 1px solid black;
+}
+
+.short-card {
+	height: 25vh;
+}
+
+.tall-card {
+	height: 35vh;
+}
+
+.navbar-collapse {
+	max-width: 500px;
+}
+
+@media screen and (min-width: 767px) {
+	.flow-under {
+		position: relative;
+		bottom: -50px;
+	}
+
+	.bg-row {
+		background-image: url('//placehold.it/700x400');
+		background-size: cover;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.narrow {
+		margin-left: 0;
+	}
+	.flow-under {
+		position: static;
+	}
 }
