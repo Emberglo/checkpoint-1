@@ -1,3 +1,7 @@
-* {
+body {
+	font-family: 'Piazzolla', serif;
+}
+
+div {
 	outline: 1px solid black;
 }
